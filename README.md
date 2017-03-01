@@ -1,3 +1,6 @@
+![alt tag](img/logo.svg)
+![alt tag](RightSwatch.png)
+
 #Update 25/02/17
 
 - Fix des descriptions longues qui dépassaient de leur cadre
