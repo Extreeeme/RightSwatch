@@ -6,6 +6,12 @@
 					<h1 id="changelog_titre">NOUVEAUTÉS</h1>
 				</div>
 				<div id="changelog_div">
+				<div id="changelog_update">
+						<div   id="changelog_titre2"><h3>Update 01/03/17	</h3></div>
+						<h3 id="changelog_text">
+							- Ajout des couleurs des niveaux 5 / 10 / 20<br/>
+						</h3>
+					</div>
 					<div id="changelog_update">
 						<div   id="changelog_titre2"><h3>Update 28/02/17	</h3></div>
 						<h3 id="changelog_text">

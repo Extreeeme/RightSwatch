@@ -216,6 +216,163 @@ nav li:hover a{
 	background-color: #38BA8B;
 }
 
+/*---------------------------------------NIVEAU 30---------------------------------------*/
+
+#profil_head_5{
+	display: flex;
+	justify-content: space-between;
+	height: 20vh;
+	background-color: #f9d21e;
+}
+
+#ageDIV_5{
+	background-color: white;
+	height: 20vh;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid white;
+	transition: 0.5s;
+}
+
+#ageDIV_5:hover{
+	background-color: #f9d21e;
+	height: 20vh;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid white;
+	transition: 0.5s;
+}
+
+
+#age_5{
+	font-size: 1.3em;
+	color :  #f9d21e;
+	transition: 0.5s;
+}
+
+#ageDIV_5:hover #age_5{
+	color :  white;
+	transition: 0.5s;
+}
+
+#niveau_5{
+	color: #f9d21e;
+	font-weight: bolder;
+	margin : auto;
+	text-align: center;
+	margin-top: 5px;
+	width: 20%;
+	background-color: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#description_5{
+	padding: 10px;
+	color : white;
+	background-color : #f9d21e;
+	border-bottom: 2px solid white;
+	border-top: 1px solid white;
+	margin-bottom: 0px;
+	font-family: 'robotoL';
+}
+
+#description_long_5{
+	padding: 10px;
+	color : white;
+	background-color : #f9d21e;
+	border-bottom: 2px solid white;
+	border-top: 1px solid white;
+	overflow-y: scroll;
+	height: 20vh;
+}
+
+
+/*---------------------------------------NIVEAU 20---------------------------------------*/
+
+#profil_head_20{
+	display: flex;
+	justify-content: space-between;
+	height: 20vh;
+	background-color: #31589b;
+}
+
+#ageDIV_20{
+	background-color: white;
+	height: 20vh;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid white;
+	transition: 0.5s;
+}
+
+#ageDIV_20:hover{
+	background-color: #31589b;
+	height: 20vh;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid white;
+	transition: 0.5s;
+}
+
+
+#age_20{
+	font-size: 1.3em;
+	color :  #31589b;
+	transition: 0.5s;
+}
+
+#ageDIV_20:hover #age_20{
+	color :  white;
+	transition: 0.5s;
+}
+
+#niveau_20{
+	color: #31589b;
+	font-weight: bolder;
+	margin : auto;
+	text-align: center;
+	margin-top: 5px;
+	width: 20%;
+	background-color: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#description_20{
+	padding: 10px;
+	color : white;
+	background-color : #31589b;
+	border-bottom: 2px solid white;
+	border-top: 1px solid white;
+	margin-bottom: 0px;
+	font-family: 'robotoL';
+}
+
+#description_long_20{
+	padding: 10px;
+	color : white;
+	background-color : #31589b;
+	border-bottom: 2px solid white;
+	border-top: 1px solid white;
+	overflow-y: scroll;
+	height: 20vh;
+}
+
 
 /*---------------------------------------NIVEAU 10---------------------------------------*/
 
@@ -401,6 +558,30 @@ nav li:hover a{
 	padding: 5px;
 	
 }
+
+.meter_20 { 
+	height: 10px;
+	position: relative;
+	width: 95%;
+	margin-left: 2px;
+	background: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border-radius: 25px;
+	padding: 5px;
+	
+}
+
+.meter_20 > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
 /*---------------------------Barre Niveau 10---------------------------*/
 .meter_10 > span {
   display: block;
@@ -424,6 +605,14 @@ nav li:hover a{
   background-color: black;
   position: relative;
   overflow: hidden;
+}
+
+.blue > span {
+  background-color: #31589b;
+}
+
+.jaune > span {
+  background-color: #f9d21e;
 }
 
 .indigo > span {

@@ -29,10 +29,14 @@
 			<div id="container4">
 				
 				<div id="profil">
-				<?php if($user->niveau_xp < 10) { ?>
+				<?php if($user->niveau_xp < 5) { ?>
 				<div id="profil_head">
-				<?php }else{ ?>
+				<?php }elseif($user->niveau_xp < 10){ ?>
+				<div id="profil_head_5">
+				<?php }elseif($user->niveau_xp < 20){ ?>
 				<div id="profil_head_10">
+				<?php }else{ ?>
+				<div id="profil_head_20">
 				<?php } ?>
 
 
@@ -48,7 +52,7 @@
 						<h4><?php echo $user->nom ?></h4>
 					</div>
 
-					<?php if($user->niveau_xp < 10) { ?>
+					<?php if($user->niveau_xp < 5) { ?>
 
 					<div id="ageDIV">
 						<h2 id="age"><?php if($user->age != 0){
@@ -56,11 +60,24 @@
 						}
 						?></h2>
 					</div>
-
-					<?php }else{ ?>
-
+					<?php }elseif($user->niveau_xp < 10){ ?>
+					<div id="ageDIV_5">
+						<h2 id="age_5"><?php if($user->age != 0){
+							echo ($user->age)." ans";
+						}
+						?></h2>
+					</div>
+					<?php }elseif($user->niveau_xp < 20){ ?>
 					<div id="ageDIV_10">
 						<h2 id="age_10"><?php if($user->age != 0){
+							echo ($user->age)." ans";
+						}
+						?></h2>
+					</div>
+					<?php }else{ ?>
+
+					<div id="ageDIV_20">
+						<h2 id="age_20"><?php if($user->age != 0){
 							echo ($user->age)." ans";
 						}
 						?></h2>
@@ -69,7 +86,7 @@
 					<?php } ?>
 				</div>
 				<div id="profil_corps">
-				<?php if($user->niveau_xp < 10) { ?>
+				<?php if($user->niveau_xp < 5) { ?>
 
 					<?php if(isset($user->bio)){
 						if(strlen($user->bio) <300){
@@ -94,9 +111,33 @@
 					echo '<p>Niveau '.$user->niveau_xp.'</p>';
 					echo '</div>';
 				?>
-				<?php }else{ ?>
+				<?php }elseif($user->niveau_xp < 10){ ?>
 
 					<?php if(isset($user->bio)){
+						if(strlen($user->bio) <300){
+							echo '<div id="description_5">';
+							echo '<p id="bio">';
+							echo ($user->bio);
+							echo '</p>';
+							echo '</div>';
+						}else{
+							echo '<div id="description_long_5">';
+							echo '<p id="bio">';
+							echo ($user->bio);
+							echo '</p>';
+							echo '</div>';
+						}
+					} ?>
+					<?php
+					echo '<div class="meter_10 jaune">';
+					echo '<span style="width: '.$user->xp.'%"></span>';
+					echo '</div>';
+					echo '<div id="niveau_5">';
+					echo '<p>Niveau '.$user->niveau_xp.'</p>';
+					echo '</div>';
+					?>
+				<?php }elseif($user->niveau_xp < 20){ ?>
+				<?php if(isset($user->bio)){
 						if(strlen($user->bio) <300){
 							echo '<div id="description_10">';
 							echo '<p id="bio">';
@@ -119,7 +160,30 @@
 					echo '<p>Niveau '.$user->niveau_xp.'</p>';
 					echo '</div>';
 					?>
-
+				<?php }else{?>
+				<?php if(isset($user->bio)){
+						if(strlen($user->bio) <300){
+							echo '<div id="description_20">';
+							echo '<p id="bio">';
+							echo ($user->bio);
+							echo '</p>';
+							echo '</div>';
+						}else{
+							echo '<div id="description_long_20">';
+							echo '<p id="bio">';
+							echo ($user->bio);
+							echo '</p>';
+							echo '</div>';
+						}
+					} ?>
+					<?php
+					echo '<div class="meter_10 blue">';
+					echo '<span style="width: '.$user->xp.'%"></span>';
+					echo '</div>';
+					echo '<div id="niveau_20">';
+					echo '<p>Niveau '.$user->niveau_xp.'</p>';
+					echo '</div>';
+					?>
 				<?php } ?>
 
 					<div id="profil_bas">

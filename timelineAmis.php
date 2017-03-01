@@ -29,10 +29,14 @@
 	<div id="container4">
 				
 				<div id="profil">
-				<?php if($_SESSION["auth"]->niveau_xp < 10) { ?>
+				<?php if($_SESSION["auth"]->niveau_xp < 5) { ?>
 				<div id="profil_head">
-				<?php }else{ ?>
+				<?php }elseif($_SESSION["auth"]->niveau_xp < 10){ ?>
+				<div id="profil_head_5">
+				<?php }elseif($_SESSION["auth"]->niveau_xp < 20){ ?>
 				<div id="profil_head_10">
+				<?php }else{ ?>
+				<div id="profil_head_20">
 				<?php } ?>
 
 
@@ -47,8 +51,7 @@
 						<h3><?php echo $_SESSION["auth"]->prenom ?></h3>
 						<h4><?php echo $_SESSION["auth"]->nom ?></h4>
 					</div>
-
-					<?php if($_SESSION["auth"]->niveau_xp < 10) { ?>
+					<?php if($_SESSION["auth"]->niveau_xp < 5) { ?>
 
 					<div id="ageDIV">
 						<h2 id="age"><?php if($_SESSION["auth"]->age != 0){
@@ -56,8 +59,14 @@
 						}
 						?></h2>
 					</div>
-
-					<?php }else{ ?>
+					<?php }elseif($_SESSION["auth"]->niveau_xp < 10){ ?>
+					<div id="ageDIV_5">
+						<h2 id="age_5"><?php if($_SESSION["auth"]->age != 0){
+							echo ($_SESSION["auth"]->age)." ans";
+						}
+						?></h2>
+					</div>
+					<?php }elseif($_SESSION["auth"]->niveau_xp < 20){ ?>
 
 					<div id="ageDIV_10">
 						<h2 id="age_10"><?php if($_SESSION["auth"]->age != 0){
@@ -65,11 +74,17 @@
 						}
 						?></h2>
 					</div>
-
+					<?php }else{ ?>
+					<div id="ageDIV_20">
+						<h2 id="age_20"><?php if($_SESSION["auth"]->age != 0){
+							echo ($_SESSION["auth"]->age)." ans";
+						}
+						?></h2>
+					</div>
 					<?php } ?>
 				</div>
 				<div id="profil_corps">
-				<?php if($_SESSION["auth"]->niveau_xp < 10) { ?>
+				<?php if($_SESSION["auth"]->niveau_xp < 5) { ?>
 
 					<?php if(isset($_SESSION["auth"]->bio)){
 						if(strlen($_SESSION["auth"]->bio) <300){
@@ -94,7 +109,31 @@
 					echo '<p>Niveau '.$_SESSION["auth"]->niveau_xp.'</p>';
 					echo '</div>';
 				?>
-				<?php }else{ ?>
+				<?php }elseif($_SESSION["auth"]->niveau_xp < 10){ ?>
+				<?php if(isset($_SESSION["auth"]->bio)){
+						if(strlen($_SESSION["auth"]->bio) <300){
+							echo '<div id="description_5">';
+							echo '<p id="bio">';
+							echo ($_SESSION["auth"]->bio);
+							echo '</p>';
+							echo '</div>';
+						}else{
+							echo '<div id="description_long_5">';
+							echo '<p id="bio">';
+							echo ($_SESSION["auth"]->bio);
+							echo '</p>';
+							echo '</div>';
+						}
+					} ?>
+					<?php
+					echo '<div class="meter_20 jaune">';
+					echo '<span style="width: '.$_SESSION["auth"]->xp.'%"></span>';
+					echo '</div>';
+					echo '<div id="niveau_5">';
+					echo '<p>Niveau '.$_SESSION["auth"]->niveau_xp.'</p>';
+					echo '</div>';
+					?>
+				<?php }elseif($_SESSION["auth"]->niveau_xp < 20){ ?>
 
 					<?php if(isset($_SESSION["auth"]->bio)){
 						if(strlen($_SESSION["auth"]->bio) <300){
@@ -119,7 +158,30 @@
 					echo '<p>Niveau '.$_SESSION["auth"]->niveau_xp.'</p>';
 					echo '</div>';
 					?>
-
+				<?php }else{ ?>
+					<?php if(isset($_SESSION["auth"]->bio)){
+						if(strlen($_SESSION["auth"]->bio) <300){
+							echo '<div id="description_20">';
+							echo '<p id="bio">';
+							echo ($_SESSION["auth"]->bio);
+							echo '</p>';
+							echo '</div>';
+						}else{
+							echo '<div id="description_long_20">';
+							echo '<p id="bio">';
+							echo ($_SESSION["auth"]->bio);
+							echo '</p>';
+							echo '</div>';
+						}
+					} ?>
+					<?php
+					echo '<div class="meter_20 blue">';
+					echo '<span style="width: '.$_SESSION["auth"]->xp.'%"></span>';
+					echo '</div>';
+					echo '<div id="niveau_20">';
+					echo '<p>Niveau '.$_SESSION["auth"]->niveau_xp.'</p>';
+					echo '</div>';
+					?>
 				<?php } ?>
 			
 
