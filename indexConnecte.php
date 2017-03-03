@@ -32,8 +32,10 @@
 				<div id="profil_head_5">
 				<?php }elseif($_SESSION["auth"]->niveau_xp < 20){ ?>
 				<div id="profil_head_10">
-				<?php }else{ ?>
+				<?php }elseif($_SESSION["auth"]->niveau_xp < 30){ ?>
 				<div id="profil_head_20">
+				<?php }else{ ?>
+				<div id="profil_head_30">
 				<?php } ?>
 
 
@@ -71,9 +73,16 @@
 						}
 						?></h2>
 					</div>
-					<?php }else{ ?>
+					<?php }elseif($_SESSION["auth"]->niveau_xp < 30){ ?>
 					<div id="ageDIV_20">
 						<h2 id="age_20"><?php if($_SESSION["auth"]->age != 0){
+							echo ($_SESSION["auth"]->age)." ans";
+						}
+						?></h2>
+					</div>
+					<?php }else{ ?>
+					<div id="ageDIV_30">
+						<h2 id="age_30"><?php if($_SESSION["auth"]->age != 0){
 							echo ($_SESSION["auth"]->age)." ans";
 						}
 						?></h2>
@@ -155,8 +164,8 @@
 					echo '<p>Niveau '.$_SESSION["auth"]->niveau_xp.'</p>';
 					echo '</div>';
 					?>
-				<?php }else{ ?>
-					<?php if(isset($_SESSION["auth"]->bio)){
+				<?php }elseif($_SESSION["auth"]->niveau_xp < 30){ ?>
+				<?php if(isset($_SESSION["auth"]->bio)){
 						if(strlen($_SESSION["auth"]->bio) <300){
 							echo '<div id="description_20">';
 							echo '<p id="bio">';
@@ -176,6 +185,30 @@
 					echo '<span style="width: '.$_SESSION["auth"]->xp.'%"></span>';
 					echo '</div>';
 					echo '<div id="niveau_20">';
+					echo '<p>Niveau '.$_SESSION["auth"]->niveau_xp.'</p>';
+					echo '</div>';
+					?>
+				<?php }else{ ?>
+					<?php if(isset($_SESSION["auth"]->bio)){
+						if(strlen($_SESSION["auth"]->bio) <300){
+							echo '<div id="description_30">';
+							echo '<p id="bio">';
+							echo ($_SESSION["auth"]->bio);
+							echo '</p>';
+							echo '</div>';
+						}else{
+							echo '<div id="description_long_30">';
+							echo '<p id="bio">';
+							echo ($_SESSION["auth"]->bio);
+							echo '</p>';
+							echo '</div>';
+						}
+					} ?>
+					<?php
+					echo '<div class="meter_30 blue">';
+					echo '<span style="width: '.$_SESSION["auth"]->xp.'%"></span>';
+					echo '</div>';
+					echo '<div id="niveau_30">';
 					echo '<p>Niveau '.$_SESSION["auth"]->niveau_xp.'</p>';
 					echo '</div>';
 					?>
