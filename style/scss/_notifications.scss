@@ -1,0 +1,49 @@
+//---------------------------Notifications---------------------------
+.alert{
+	width: 50%;
+	font-size: 1.2em;
+	padding: 20px;
+	margin-top: 15vh;
+	position: absolute;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-self: center;
+	animation-name: apparition4;
+ 	animation-duration: 2s;
+ 	animation-fill-mode: forwards;
+ 	z-index: 2;
+}
+
+.alert-danger{
+	background-color: #F2DEDE;
+	color : #F00000;
+	border : 1px solid #F00000;
+}
+
+.alert-success{
+	background-color: #D9EDF7;
+	color : #00299D;
+	border : 1px solid #00299D;
+}
+
+.alert_button{
+	text-decoration: none;
+}
+
+.button_danger{
+	color : #F00000;
+}
+
+.button_success{
+	color : #00299D;
+}
+
+//---------------------------Animation des notifications---------------------------
+
+ @keyframes apparition4{
+ 	0%{opacity: 0;}
+ 	10%{opacity: 1;}
+ 	90%{opacity: 1;}
+ 	100%{opacity: 0;}
+ }

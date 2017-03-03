@@ -1,0 +1,75 @@
+#profil_head_10{
+	display: flex;
+	justify-content: space-between;
+	height: 20vh;
+	background-color: #4b0082;
+}
+
+#ageDIV_10{
+	background-color: white;
+	height: 20vh;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid white;
+	transition: 0.5s;
+}
+
+#ageDIV_10:hover{
+	background-color: #4b0082;
+	height: 20vh;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid white;
+	transition: 0.5s;
+}
+
+
+#age_10{
+	font-size: 1.3em;
+	color :  #4b0082;
+	transition: 0.5s;
+}
+
+#ageDIV_10:hover #age_10{
+	color :  white;
+	transition: 0.5s;
+}
+
+#niveau_10{
+	color: #4b0082;
+	font-weight: bolder;
+	margin : auto;
+	text-align: center;
+	margin-top: 5px;
+	width: 20%;
+	background-color: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#description_10{
+	padding: 10px;
+	color : white;
+	background-color : #4b0082;
+	border-bottom: 2px solid white;
+	border-top: 1px solid white;
+	margin-bottom: 0px;
+	font-family: 'robotoL';
+}
+
+#description_long_10{
+	padding: 10px;
+	color : white;
+	background-color : #4b0082;
+	border-bottom: 2px solid white;
+	border-top: 1px solid white;
+	overflow-y: scroll;
+	height: 20vh;
+}

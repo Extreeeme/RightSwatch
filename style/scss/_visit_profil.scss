@@ -1,0 +1,49 @@
+#follow{
+	font-family: 'sensation';
+	background-color: white;
+	color: #003823;
+	padding: 10px;
+	margin-top: 30px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#follow_button{
+	padding: 15px;
+	width: 150px;
+	margin-top: 0vh;
+	background-color: white;
+	color: #003823;
+	font-family: 'sensation';
+	font-family: 1em;
+	margin-top: 30px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#follow_button:focus, #follow_button:active{
+	border : 2px unset #27AC84;
+	box-shadow: none;
+}
+
+#unfollow_button{
+	padding: 15px;
+	width: 150px;
+	margin-top: 0vh;
+	background-color: white;
+	color: #003823;
+	font-family: 'sensation';
+	font-family: 1em;
+	margin-top: 30px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#unfollow_button:focus, #follow_button:active{
+	border : 2px unset #27AC84;
+	box-shadow: none;
+}
+
+#profil_bas{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}

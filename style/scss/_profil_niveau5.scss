@@ -1,0 +1,77 @@
+
+#profil_head_5{
+	display: flex;
+	justify-content: space-between;
+	height: 20vh;
+	background-color: #f9d21e;
+}
+
+#ageDIV_5{
+	background-color: white;
+	height: 20vh;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid white;
+	transition: 0.5s;
+}
+
+#ageDIV_5:hover{
+	background-color: #f9d21e;
+	height: 20vh;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid white;
+	transition: 0.5s;
+}
+
+
+#age_5{
+	font-size: 1.3em;
+	color :  #f9d21e;
+	transition: 0.5s;
+}
+
+#ageDIV_5:hover #age_5{
+	color :  white;
+	transition: 0.5s;
+}
+
+#niveau_5{
+	color: #f9d21e;
+	font-weight: bolder;
+	margin : auto;
+	text-align: center;
+	margin-top: 5px;
+	width: 20%;
+	background-color: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#description_5{
+	padding: 10px;
+	color : white;
+	background-color : #f9d21e;
+	border-bottom: 2px solid white;
+	border-top: 1px solid white;
+	margin-bottom: 0px;
+	font-family: 'robotoL';
+}
+
+#description_long_5{
+	padding: 10px;
+	color : white;
+	background-color : #f9d21e;
+	border-bottom: 2px solid white;
+	border-top: 1px solid white;
+	overflow-y: scroll;
+	height: 20vh;
+}
+

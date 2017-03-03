@@ -1,0 +1,56 @@
+.meter { 
+	height: 10px;
+	position: relative;
+	width: 95%;
+	margin-left: 2px;
+	background: #27AC84;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border-radius: 25px;
+	padding: 5px;
+	
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.white > span {
+  background-color: white
+}
+
+.jaune > span{
+  background-color: #F9D21E;	
+}
+
+
+
+@import 'barre_niveau10.scss';
+@import 'barre_niveau20.scss';
+
+.white > span {
+  background-color: white
+}
+
+.jaune > span{
+  background-color: #F9D21E;	
+}
+	
+//---------------------------Indication du niveau---------------------------
+#niveau{
+	color: #27AC84;
+	font-weight: bolder;
+	margin : auto;
+	text-align: center;
+	margin-top: 5px;
+	width: 20%;
+	background-color: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}

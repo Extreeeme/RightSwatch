@@ -1,0 +1,36 @@
+@import 'font.scss';
+//---------------------------Réinitialisation du body---------------------------
+body{
+	font-family: 'sensation';
+	margin: 0;
+	padding: 0; 
+}
+
+@import 'header.scss';
+@import 'index.scss';
+//--------------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------INDEX CONNECTE---------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+
+#container4{
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	/* SCROLL HORIZONTAL */
+	overflow-x: scroll;
+	overflow-y: hidden;
+    	width: auto;
+    	animation-name: apparition2;
+ 	animation-duration: 1s;
+}
+
+@import 'profil.scss';
+
+
+@import 'timeline.scss';
+
+@import 'connexion_Inscription.scss';
+
+@import 'changelog.scss';
+
+@import 'visit_profil.scss';

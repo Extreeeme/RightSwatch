@@ -11,7 +11,7 @@ if(session_status() == PHP_SESSION_NONE){
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/png" href="img/favicon.png" />
 		<title>RightSwatch</title>
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="style/css/style.css">
 		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 		<script type='text/javascript' src='js/jquery.mousewheel.min.js'></script>
 		<script>

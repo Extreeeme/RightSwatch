@@ -1,0 +1,36 @@
+nav a{
+	color : #11A478;
+	text-decoration: none;
+	transition: 0.5s;
+	display: block;
+	padding: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+nav{
+	display: flex;
+	justify-content: flex-start;
+}
+
+nav li{
+	list-style: none;
+	transition: 0.5s;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+nav li:hover{
+	transition: 0.5s;
+	background-color: #11A478;
+}
+
+nav li:hover a{
+	color: white;
+	transition: 0.5s;
+}

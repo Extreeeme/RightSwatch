@@ -1,0 +1,76 @@
+#profil{
+	width: 35%;
+	height: 85vh;
+	margin-top: 2vh;
+	margin-left: 10px;
+	background-color: #ECECEC;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+//---------------------------Haut du profil---------------------------
+#profil_head{
+	display: flex;
+	justify-content: space-between;
+	height: 20vh;
+	background-color: #38BA8B;
+}
+
+@import 'profil_niveau5.scss';
+@import 'profil_niveau10.scss';
+@import 'profil_niveau20.scss';
+@import 'profil_niveau0.scss';
+
+@import 'barre.scss';
+//---------------------------Description du profil ---------------------------
+#description{
+	padding: 10px;
+	color : white;
+	background-color : #27AC84;
+	border-bottom: 2px solid white;
+	border-top: 1px solid white;
+	margin-bottom: 0px;
+	font-family: 'robotoL';
+}
+
+//---------------------------Description longue du profil ---------------------------
+#description_long{
+	padding: 10px;
+	color : white;
+	background-color : #27AC84;
+	border-bottom: 2px solid white;
+	border-top: 1px solid white;
+	overflow-y: scroll;
+	height: 20vh;
+}
+
+//---------------------------Bouton d'envoi du message---------------------------
+#envoi_button{
+	background-color: #11A478;
+	border: 1px #004C35 solid;
+	color: white;
+	font-size: 1.4em;
+	margin-left: 10px;
+}
+//---------------------------Formulaire ---------------------------
+ #formulaire_envoi{
+ 	background-color: #F4F4F4;
+ 	border : solid 2px #F4F4F4;
+ 	font-size: 1.4em;
+ 	margin: 10px;
+ 	border-radius: 2px;
+ 	padding: 2px;
+ 	box-shadow: 1px 1px 5px 0px #656565;
+ 	transition: 0.5s;
+ }
+//---------------------------Text area du message---------------------------
+  #formulaire_envoi_input{
+ 	background-color: #F4F4F4;
+ 	border : solid 2px #F4F4F4;
+ 	font-size: 1.4em;
+ 	margin: 10px;
+ 	border-radius: 2px;
+ 	padding: 2px;
+ 	transition: 0.5s;
+ 	width: 94%;
+ 	height: 20vh;
+ }

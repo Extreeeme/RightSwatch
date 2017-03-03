@@ -1,0 +1,78 @@
+#profil_texte{
+	color : white;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+#profil_texte h3{
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+
+#profil_texte h4{
+	margin: 0;
+	padding: 0;
+	margin-top: 5px;
+	margin-left: 30px;
+}
+
+//---------------------------Div de l'âge---------------------------
+#ageDIV{
+	background-color: white;
+	height: 20vh;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid white;
+	transition: 0.5s;
+}
+
+#ageDIV:hover{
+	background-color: #27AC84;
+	height: 20vh;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid white;
+	transition: 0.5s;
+}
+
+#ageDIV:hover #age{
+	color :  white;
+	transition: 0.5s;
+}
+
+#age{
+	font-size: 1.3em;
+	color :  #00D19A;
+	transition: 0.5s;
+}
+
+//---------------------------Photo du profil---------------------------
+#photo_profil{
+	-webkit-border-radius:80px;
+	-moz-border-radius:80px; 
+	border-radius:80px;
+	width:80px;
+	height:80px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#profil_corps{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Helvetica';
+	overflow: hidden;
+}
