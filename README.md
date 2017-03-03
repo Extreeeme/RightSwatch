@@ -1,4 +1,4 @@
-![alt tag](img/logo.svg)
+
 ![alt tag](RightSwatch.png)
 
 #Update 25/02/17
@@ -21,3 +21,9 @@
 
 - Ajout de l'expérience
 - Ajout des différentes couleurs en fonction du palier d'expérience
+
+#Update 03/03/17
+- Ajout du niveau 30
+
+#Update 01/03/17
+- Ajout des couleurs des niveaux 5 / 10 / 20
